@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contactez-nous</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Contactez-nous</h2>
+  
+  <form id="contactForm" action="submit.php" method="post">
+    <div>
+      <label for="name">Nom :</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <label for="phone">Téléphone :</label>
+      <input type="tel" id="phone" name="phone">
+    </div>
+    <div>
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" required></textarea>
+    </div>
+    <div>
+      <label for="propertyType">Type de bien :</label>
+      <select id="propertyType" name="propertyType">
+        <option value="appartement">Appartement</option>
+        <option value="maison">Maison</option>
+        <option value="villa">Villa</option>
+        <option value="studio">Studio</option>
+      </select>
+    </div>
+    <div>
+      <label for="services">Services souhaités :</label>
+      <input type="checkbox" id="cleaning" name="services[]" value="nettoyage">
+      <label for="cleaning">Nettoyage</label>
+      <input type="checkbox" id="maintenance" name="services[]" value="maintenance">
+      <label for="maintenance">Maintenance</label>
+    </div>
+    <input type="submit" value="Envoyer">
+  </form>
+</div>
+
+</body>
+</html>
